@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+  --primary-color: #4c1d95;
+  --red-color-shade: #DC2626;
+
+}
+
+hr{
+    margin: 2.5rem 0rem;
+}
+body {
+  font-family: "Roboto Slab", serif;
+}
+.list-inline{
+    display: inline;
+}
+.link{
+    box-sizing: border-box;
+    text-decoration: none;
+    padding:0.5rem 1rem;
+}
+
+.nav{
+    background-color: var(--primary-color);
+    color:white;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.nav-list{
+    text-align: right ;
+}
+.nav a {
+    color: white;
+}
+.nav-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+ .nav .active{
+    font-weight: bold;
+}
+
+header {
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+header img {
+    width: 50vw;
+    margin: auto;
+    display: block;
+    height: 50vh;
+}
+header h1 {
+    padding-top: 1rem;
+}
+header span{
+    color: var(--red-color-shade);
+}
+
+.link-primary {
+  background-color: var(--primary-color);
+  color:white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.link-secondary {
+  color: var(--primary-color);
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem;
+}
+
+.list-unordered {
+    list-style: none;
+}
+
+
+section {
+    align-items: center;
+    margin:0.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.off-white{
+    background-color: #F3F4F6
+}
+.section-technology-images{
+    padding: 1rem;
+}
+.technologies img{
+    max-width: 100px;
+    padding: 0.5rem;
+}
+
+section p {
+    margin:0.5rem;
+    padding:1rem;
+}
+
+
+.container-center {
+  padding: 1rem;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 2rem;
+    text-align: center;
+    border-top-right-radius: 1rem;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
