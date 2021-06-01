@@ -8,6 +8,7 @@
 :root {
   --primary-color: #4c1d95;
   --red-color-shade: #DC2626;
+  --black-color: #1f2937;
 
 }
 
@@ -61,7 +62,7 @@ header img {
     height: 50vh;
 }
 header h1 {
-    padding-top: 1rem;
+    padding: 1rem;
 }
 header span{
     color: var(--red-color-shade);
@@ -117,6 +118,55 @@ section p {
   text-align: center;
 }
 
+.header-blog-heading{
+    font-size: 4rem;
+    text-align: center;
+    margin: 1rem;
+    color: var(--black-color);
+}
+.header-blog-img{
+    max-width: 100%;
+    height: auto;
+}
+@media(min-width:1200px) {
+    .header-blog-img{
+        width: 700px;
+        height: auto;
+    }
+    .header-blog-heading{
+        font-size: 5rem;
+    }
+}
+@media(max-width:800px) {
+    .header-blog-heading{
+        font-size: 3rem;
+    }
+
+}
+
+@media(max-width:500px) {
+    .header-blog-heading{
+        font-size: 2rem;
+    }
+}
+.section-blog{
+    padding: 3rem;
+    line-height: 150%;
+    display: block;
+}
+.blog-container {
+    max-width: 900px;
+    margin: auto;
+    display: block;
+    text-align: left;
+}
+.blog-container p {
+
+}
+.blog-date{
+    padding: 1rem;
+    margin: 0.5rem;
+}
 footer {
     background-color: var(--primary-color);
     padding: 2rem;
