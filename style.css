@@ -16,6 +16,7 @@ hr {
 }
 body {
   font-family: "Roboto Slab", serif;
+  height: 120vh;
 }
 .list-inline {
   display: inline;
@@ -31,6 +32,9 @@ body {
   color: white;
   padding: 1rem;
   border-bottom-left-radius: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .nav-list {
@@ -48,6 +52,7 @@ body {
 }
 
 header {
+  margin-top: 5.4rem;
   padding: 2rem;
   align-items: center;
   text-align: center;
@@ -113,8 +118,8 @@ section p {
   margin: auto;
   text-align: center;
 }
-.blog-summary-container{
-    text-align: justify;
+.blog-summary-container {
+  text-align: justify;
 }
 .header-blog-heading {
   font-size: 4rem;
@@ -169,8 +174,8 @@ section p {
   .blog-container p {
     padding: 0.5rem;
   }
-  .blog-date{
-      padding: 0.5rem;
+  .blog-date {
+    padding: 0.5rem;
   }
 }
 footer {
