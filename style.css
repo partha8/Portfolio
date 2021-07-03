@@ -133,11 +133,11 @@ section p {
 }
 @media (min-width: 1200px) {
   .header-blog-img {
-    width: 700px;
+    width: 600px;
     height: auto;
   }
   .header-blog-heading {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 @media (max-width: 800px) {
@@ -154,15 +154,21 @@ section p {
 .section-blog {
   padding: 3rem;
   line-height: 150%;
-  display: block;
 }
 .blog-container {
   max-width: 900px;
   margin: auto;
-  display: block;
   text-align: justify;
 }
-
+.blog-container p,
+h2,h3,h4 {
+  padding: 0.2rem 1rem;
+  margin: 0.5rem;
+}
+.inside-blog-images {
+  width: 100%;
+  margin: 0.5rem auto;
+}
 .blog-date {
   padding: 1rem;
   margin: 0.5rem;
@@ -171,13 +177,16 @@ section p {
   .section-blog {
     padding: 0.5rem;
   }
-  .blog-container p {
+  .blog-container p,
+  h2 {
     padding: 0.5rem;
+    margin: 0.5rem;
   }
   .blog-date {
     padding: 0.5rem;
   }
 }
+
 footer {
   background-color: var(--primary-color);
   padding: 2rem;
