@@ -9,6 +9,8 @@
   --primary-color: #4c1d95;
   --red-color-shade: #dc2626;
   --black-color: #1f2937;
+  font-size: 16px;
+  --transition: all 0.3s linear;
 }
 
 hr {
@@ -17,6 +19,7 @@ hr {
 body {
   font-family: "Roboto Slab", serif;
   height: 100vh;
+  scroll-behavior: smooth;
 }
 .list-inline {
   display: inline;
@@ -28,6 +31,7 @@ body {
 }
 
 .nav {
+  display: flex;
   background-color: var(--primary-color);
   color: white;
   padding: 1rem;
@@ -35,38 +39,82 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
 }
-
-.nav-list {
-  text-align: right;
+.nav__toggle {
+  display: none;
+  transition: var(--transition);
 }
 .nav a {
   color: white;
 }
 .nav-brand {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 .nav .active {
   font-weight: bold;
 }
 
+@media screen and (max-width: 800px) {
+  .nav {
+    display: block;
+  }
+  .nav-brand {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__toggle {
+    display: block;
+    font-size: 2rem;
+  }
+  .toggle__active {
+    transform: rotate(-90deg);
+  }
+  .nav__menu {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+  .show-menu{
+    height: 5rem;
+    transition: var(--transition);
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
 header {
   margin-top: 5.4rem;
   padding: 2rem;
   align-items: center;
   text-align: center;
 }
-
+.header__main {
+  display: flex;
+  justify-content: space-evenly;
+}
 header img {
-  width: 50vw;
-  margin: auto;
-  display: block;
+  width: 40vw;
   height: 50vh;
 }
-header h1 {
-  padding: 1rem;
+@media screen and (max-width: 800px) {
+  .header__main {
+    flex-direction: column-reverse;
+  }
+  header h1 {
+    padding: 1rem;
+  }
+  header img {
+    width: 60vw;
+  }
 }
+
 header span {
   color: var(--red-color-shade);
 }
@@ -161,7 +209,9 @@ section p {
   text-align: justify;
 }
 .blog-container p,
-h2,h3,h4 {
+h2,
+h3,
+h4 {
   padding: 0.2rem 1rem;
   margin: 0.5rem;
 }
@@ -189,9 +239,21 @@ h2,h3,h4 {
 
 footer {
   background-color: var(--primary-color);
-  padding: 2rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem;
   border-top-right-radius: 1rem;
+  font-size: 1.2rem;
+}
+footer p {
+  margin: 0.5rem 0;
+  color: white;
+}
+footer ul {
+  margin: 0.5rem 0;
 }
 footer a {
   text-decoration: none;

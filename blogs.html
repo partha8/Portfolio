@@ -6,23 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blogs | Partha</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav class="nav">
+      <nav class="nav">
       <div class="nav-brand">
-        <a class="link" href="/"> Partha</a>
+        <a class="link" href="/"> Partha Sarma</a>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
       </div>
-      <ul class="nav-list">
-        <li class="list-inline">
-          <a class="link" href="/">Home</a>
-        </li>
-        <li class="list-inline">
-          <a class="link projects" href="projects.html">Projects</a>
-        </li>
-        <li class="list-inline">
-          <a class="link blog active" href="blogs.html">Blogs</a>
-        </li>
-      </ul>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="list-inline">
+            <a class="link " href="/">Home</a>
+          </li>
+          <li class="list-inline">
+            <a class="link projects" href="projects.html">Projects</a>
+          </li>
+          <li class="list-inline">
+            <a class="link blog active" href="blogs.html">Blogs</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <header class="header">
       <img src="./images/blog.svg" alt="" />
@@ -41,17 +50,30 @@
       </div>
     </section>
     <footer>
+      <p>Connect with me</p>
       <ul class="list-unordered">
         <li class="list-inline">
-          <a href="https://www.linkedin.com/in/partha8/">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/partha8/" target="_blank"
+            ><img src="https://img.icons8.com/color/48/000000/linkedin.png"
+          /></a>
         </li>
         <li class="list-inline">
-          <a href="https://github.com/partha8">GitHub</a>
+          <a href="https://github.com/partha8" target="_blank"
+            ><img src="https://img.icons8.com/fluent/48/000000/github.png"
+          /></a>
         </li>
         <li class="list-inline">
-          <a href="https://twitter.com/partha_sarma8">Twitter</a>
+          <a href="https://twitter.com/partha_sarma8" target="_blank"
+            ><img src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+          /></a>
+        </li>
+        <li class="list-inline">
+          <a href="mailto:parthasarma34@gmail.com"
+            ><img src="https://img.icons8.com/color/48/000000/gmail.png"
+          /></a>
         </li>
       </ul>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>

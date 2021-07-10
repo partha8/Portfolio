@@ -6,34 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Partha</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="nav">
       <div class="nav-brand">
-        <a class="link" href="/"> Partha</a>
+        <a class="link" href="/"> Partha Sarma</a>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
       </div>
-      <ul class="nav-list">
-        <li class="list-inline">
-          <a class="link active" href="/">Home</a>
-        </li>
-        <li class="list-inline">
-          <a class="link projects" href="projects.html">Projects</a>
-        </li>
-        <li class="list-inline">
-          <a class="link blog" href="blogs.html">Blogs</a>
-        </li>
-      </ul>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="list-inline">
+            <a class="link active" href="/">Home</a>
+          </li>
+          <li class="list-inline">
+            <a class="link projects" href="projects.html">Projects</a>
+          </li>
+          <li class="list-inline">
+            <a class="link blog" href="blogs.html">Blogs</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-    <header class="header">
+    <header class="header__main">
+      <div>
+        <h1>
+          Hi there!
+          <br />
+          I'm Partha, a <span> Web Developer</span>
+        </h1>
+      </div>
       <img src="./images/brand.svg" alt="" />
-      <h1>
-        Hi there!
-        <br />
-        I'm Partha, a <span> Web Developer</span>
-      </h1>
     </header>
-
     <section class="off-white technologies">
       <h2>Technologies I'm familiar with</h2>
       <div class="section-technology-images">
@@ -66,17 +76,30 @@
     </section>
 
     <footer>
+      <p>Connect with me</p>
       <ul class="list-unordered">
         <li class="list-inline">
-          <a href="https://www.linkedin.com/in/partha8/" target="_blank">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/partha8/" target="_blank"
+            ><img src="https://img.icons8.com/color/48/000000/linkedin.png"
+          /></a>
         </li>
         <li class="list-inline">
-          <a href="https://github.com/partha8" target="_blank">GitHub</a>
+          <a href="https://github.com/partha8" target="_blank"
+            ><img src="https://img.icons8.com/fluent/48/000000/github.png"
+          /></a>
         </li>
         <li class="list-inline">
-          <a href="https://twitter.com/partha_sarma8" target="_blank">Twitter</a>
+          <a href="https://twitter.com/partha_sarma8" target="_blank"
+            ><img src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+          /></a>
+        </li>
+        <li class="list-inline">
+          <a href="mailto:parthasarma34@gmail.com"
+            ><img src="https://img.icons8.com/color/48/000000/gmail.png"
+          /></a>
         </li>
       </ul>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
